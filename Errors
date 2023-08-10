@@ -1,0 +1,28 @@
+#Len () - this function can count the length, however, it does not like working with integars. By having len(123), this will break the code
+
+num_char = len(input("What is your name?"))
+print("Your name has " + num_char + "characters.")
+
+line 4 will break because num_char is an integar
+to check the type
+print(type(num_char))
+
+to change line 3:num_char = len(input("What is your name?"))intp a string, you can do str(num_char) and then store it under another name
+
+you can also do
+a = 123
+print(type(a))
+and it should return as an integar
+
+you can do a = str(123); now a is a string
+
+Quiz:  sum of a 2 digit number
+# 🚨 Don't change the code below 👇
+two_digit_number = input("Type a two digit number: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+a = int(two_digit_number[0])
+b = int(two_digit_number[1])
+print(a+b)
